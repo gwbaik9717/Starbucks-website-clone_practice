@@ -78,7 +78,6 @@ a {
 }
 
 
-
 /* HEADER */
 header {
     background-color: #f6f5f0;
@@ -86,7 +85,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 11;
 }
 
 header>.inner {
@@ -447,6 +446,12 @@ header .badges .badge {
     height: 693px;
     background-color: #f6f5ef;
     position: relative;
+    transition: height .4s;
+}
+
+.notice .promotion.hide {
+    height: 0;
+    overflow: hidden;
 }
 
 .notice .promotion .swiper-container {
@@ -480,6 +485,11 @@ header .badges .badge {
     bottom: 40px;
     left: 0;
     right: 0;
+    z-index: 1;
+}
+
+.notice .promotion .swiper-pagination.hide {
+    display: none;
 }
 
 .notice .promotion .swiper-pagination .swiper-pagination-bullet {
@@ -526,10 +536,100 @@ header .badges .badge {
     margin-right: -480px;
 }
 
-
-
 .notice .promotion .swiper-prev:hover,
 .notice .promotion .swiper-next:hover {
     background-color: #333;
     color: #fff;
+}
+
+
+/*Rewards*/
+.rewards {
+    position: relative;
+}
+
+.rewards .bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #272727;
+
+}
+
+.rewards .bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #d5c798;
+
+}
+
+.rewards .inner {
+    background-image: url(../images/rewards.jpg);
+    height: 241px;
+
+}
+
+.rewards .btn-group {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+}
+
+.rewards .btn-group .sign-up {
+    margin-right: 10px;
+
+}
+
+.rewards .btn-group .sign-in {
+    width: 110px;
+}
+
+.rewards .btn-group .gift {
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+/* Youtube Video */
+.youtube {
+    position: relative;
+    background-color: #333;
+    height: 700px;
+    overflow: hidden;
+}
+
+.youtube .youtube__area {
+    top: 50%;
+    width: 1920px;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    margin-left: calc(1920px/-2);
+    margin-top: calc((1920px * 9 / 16) / -2);
+}
+
+.youtube .youtube__area::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+#player {}
+
+.youtube .youtube__cover {
+    background-image: url(../images/video_cover_pattern.png);
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

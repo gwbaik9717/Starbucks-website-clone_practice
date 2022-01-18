@@ -68,3 +68,14 @@ new Swiper('.promotion .swiper-container', {
         nextEl: '.promotion .swiper-next ',
     }
 });
+
+
+const promotionEl = document.querySelector('.notice .promotion');
+const protmotionToggleBtn = document.querySelector('.toggle-promotion');
+const paginationEl = document.querySelector('.notice .promotion .swiper-pagination');
+let isHidePromotion = false;
+
+protmotionToggleBtn.addEventListener('click', () => {
+    promotionEl.classList.toggle('hide');
+    paginationEl.classList.toggle('hide');
+})
