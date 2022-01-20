@@ -639,3 +639,84 @@ header .badges .badge {
     width: 100%;
     height: 100%;
 }
+
+.youtube .inner {
+    height: 700px;
+}
+
+.youtube .inner .floating1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.youtube .inner .floating2 {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+}
+
+
+/* SEASON PRODUCT */
+.season-product {
+    background: url(../images/season_product_bg.jpg);
+
+}
+
+.season-product .inner {
+    height: 400px;
+}
+
+.season-product .floating3 {
+    position: absolute;
+    top: -200px;
+    right: 0;
+}
+
+.season-product .text-group {
+    position: absolute;
+    top: 110px;
+    right: 100px;
+}
+
+.season-product .text-group .title {
+    margin-bottom: 10px;
+}
+
+.season-product .text-group .description {
+    margin-bottom: 15px;
+}
+
+.season-product .text-group .more {}
+
+
+/* RESERVE COFFEE */
+.reserve-coffee {
+    background: url(../images/reserve_bg.jpg);
+
+}
+
+.reserve-coffee .inner {
+    height: 400px;
+
+}
+
+.reserve-coffee .reserve-logo {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+.reserve-coffee .text-group {
+    position: absolute;
+    top: 124px;
+    left: 208px;
+}
+
+.reserve-coffee .product {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.reserve-coffee .more {}
